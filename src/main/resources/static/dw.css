@@ -1,0 +1,196 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+.navbar {
+    height: 12vh;
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.navbar h1 {
+    margin-left: 20px;
+}
+
+.navbar ul {
+    margin-right: 50px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-flex;
+    line-height: 50px;
+
+}
+.navbar ul li a{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.79);
+    padding: 8px 15px;
+    text-decoration: none;
+    transition: .4s;
+
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: cornflowerblue;
+    border-radius: 2px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.H_ib_content{
+    min-width: 15em;
+    margin: 11px 4px 4px 5px;
+
+}
+#infoBox {
+    top:10px;
+    z-index: 15;
+    right: 10px;
+    position: absolute;
+}
+
+.container-fluid { padding: 0; overflow: none;}
+#mapContainer {
+    height: 88vh;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    /* top: 5px; */
+    background: rgb(88, 88, 88);
+
+}
+.col-sm-9{
+    max-width: 100%;
+}
+.form-group {
+    margin-bottom: 0.5rem;
+}
+.ctrl-panel {
+
+    background-color: #ffffff;
+    border-right: solid #ffffff 1px;
+    border-bottom: solid #ffffff 1px;
+    width: 374px;
+    max-height: calc(100% - 100px);
+    display: block;
+    font-size: 12px;
+    left: 10px;
+    padding: 10px;
+    position: absolute;
+    text-align: justify;
+    top: 12em;
+    z-index: 10;
+    -webkit-transition: left 0.5s, -webkit-transform 2s;
+    transition: left 0.5s, transform 2s;
+    clear: both;
+}
+#feedbackTxt{
+
+    overflow-y: auto;
+    min-height: 10px;
+    max-height: 350px;
+    background-color: #ffffff;
+    width: 374px;
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    text-align: justify;
+    top:237px;
+    left:0px;
+    z-index: 10;
+}
+#mydiv {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(loading.gif) center no-repeat #0c0c0c52;
+}
+
+.ajax-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px; /* -1 * image width / 2 */
+    margin-top: -32px;  /* -1 * image height / 2 */
+    display: block;
+}
+
+#feedbackTxt .card-body {
+    color: black;
+}

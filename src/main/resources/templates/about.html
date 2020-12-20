@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="dw.css">
+<div class="navbar">
+    <th:block xmlns:th="http://www.thymeleaf.org">
+        <h1><a href="/tollsapp">Routes of Macedonia</a></h1>
+        <ul>
+            <li>
+                Logged in as <th:block th:text="${session.user.getUsername()}"></th:block>
+            </li>
+            <li><a href="/routes">Saved routes</a></li>
+            <img src="../static/prifle.jpg" width="50" height="50">
+            <li><a href="/logout">Log out</a></li>
+        </ul>
+</div>
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>This is a project of a group of students on FINKI from the subject Software Architecture and Design</p>
+    <p>Bellow there is information for every member of our team</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+                <h2>Gorast Angelovski</h2>
+                <p class="title">Programmer</p>
+                <p>Implementation of Database, functionality and testing</p>
+                <p>gorast_angelovski@hotmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+                <h2>Nenad Pantikj</h2>
+                <p class="title">Engineer</p>
+                <p>Creator of main concept, html code and price calculation function</p>
+                <p>neno_pantic@hotmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+                <h2>Filip Naumovski</h2>
+                <p class="title">Designer</p>
+                <p>Css coding, creator of forms for different functionalities on our application.</p>
+                <p>filip.naumovski@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <
+            <div class="container">
+                <h2>Filip Najdovski</h2>
+                <p class="title">Art Director and Information Collector</p>
+                <p>Selection of style, collector of information about prices from all the tolls in our country.</p>
+                <p>filipnajdovski@yahoo.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
