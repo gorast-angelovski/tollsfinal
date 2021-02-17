@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Route with Toll Cost</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.1/mapsjs-clustering.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.1/mapsjs-data.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"/>
+    <!-- Custom Style sheet to try-->
+    <link rel="stylesheet" type="text/css" href="dw.css"/>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />-->
+    <script src="include.js"></script>
+</head>
+<div class="navbar">
+    <th:block xmlns:th="http://www.thymeleaf.org">
+        <h1 style="display: inline-block"><a href="/tollsapp">Tolls of Macedonia</a></h1>
+        <ul style="display: inline-block; float: right;">
+            <li>
+                Logged in as
+                <th:block th:text="${session.user.getUsername()}"></th:block>
+            </li>
+            <li><a href="/tollList">See tolls</a></li>
+            <li><a href="/logout">Log out</a></li>
+        </ul>
+</div>
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>This is a project of a group of students on FINKI from the subject Software Architecture and Design</p>
+    <p>Bellow there is information for every member of our team</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row" STYLE="padding: 10px">
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+                <h2>Gorast Angelovski</h2>
+                <p class="title">Programmer</p>
+                <p>Implementation of Spring MVC, Database, functionality and testing</p>
+                <p>gorast_angelovski@hotmail.com</p>
+                <p>
+                    <button class="button">Contact</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+                <h2>Nenad Pantikj</h2>
+                <p class="title">Engineer</p>
+                <p>Creator of main concept, html code and price calculation function</p>
+                <p>neno_pantic@hotmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+
+            <div class="container">
+                <h2>Filip Naumovski</h2>
+                <p class="title">Designer</p>
+                <p>Css coding, creator of forms for different functionalities on our application.</p>
+                <p>filip.naumovski@gmail.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h2>Filip Najdovski</h2>
+                <p class="title">Art Director and Information Collector</p>
+                <p>Selection of style, collector of information about prices from all the tolls in our country.</p>
+                <p>filipnajdovski@yahoo.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
